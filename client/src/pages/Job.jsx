@@ -73,8 +73,8 @@ function Job() {
       <h1 className="text-3xl font-semibold">{job?.title}</h1>
 
       <h3 className="text-base text-primary">
-        {remote[job?.arrangement]} &middot; {job?.city} &middot; {job?.state},{" "}
-        {job?.country} &middot; {jobTime[job?.fullTime]} &middot;{" "}
+        {remote[job?.arrangement]} &middot; {job?.city} &middot; {job?.state}{" "}
+        &middot; {job?.country} &middot; {jobTime[job?.fullTime]} &middot;{" "}
         {experience[job?.experience]} &middot;{" "}
         {/* {user?._id === job.owner._id && (
           <span className="text-green-500" onClick={() => navigate(`/jobs/edit/${job._id}`)}>Edit</span>
