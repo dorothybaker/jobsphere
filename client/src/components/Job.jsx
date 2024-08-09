@@ -40,7 +40,7 @@ function Job({ job }) {
           </p>
           <h2 className="font-semibold text-lg line-clamp-1">{job.title}</h2>
           <h3 className="text-sm line-clamp-1 text-slate-600">
-            {remote[job.arrangement]} &middot; {job.city} {job.state},{" "}
+            {remote[job.arrangement]} &middot; {job.city} &middot; {job.state},{" "}
             {job.country} &middot; {jobTime[job.fullTime]} &middot;{" "}
             {/* {user?._id === job.owner._id && (
               <span
