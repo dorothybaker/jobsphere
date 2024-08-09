@@ -1,0 +1,41 @@
+@import url("https://fonts.cdnfonts.com/css/creative-planner");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "CREATIVE PLANNER" !important;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-secondary;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-300;
+}
+
+.stdropdown-container {
+  @apply !border-none bg-gray-200 rounded-lg;
+}
+
+.stsearch-box input {
+  @apply bg-transparent outline-none h-[38px] px-3 border-none;
+}
+
+.stdropdown-item span {
+  margin-right: 5px;
+}
+
+.stdropdown-item {
+  @apply px-4 h-10 flex items-center;
+}
+
+.stdropdown-menu {
+  @apply border-none rounded-lg shadow-md max-h-56;
+}
