@@ -30,11 +30,21 @@ function Jobs({ search }) {
           ))}
 
         {!isLoading &&
+        jobs.filter((job) =>
+          job.title.toLowerCase().includes(search.toLowerCase())
+        ).length > 0 ? (
           jobs
             .filter((job) =>
               job.title.toLowerCase().includes(search.toLowerCase())
             )
-            .map((job) => <Job key={job._id} job={job} />)}
+            .map((job) => <Job key={job._id} job={job} />)
+        ) : (
+          <div className="min-h-[200px] flex w-full items-center text-start">
+            <span className="text-2xl text-slate-400">
+              No jobs found for your search query!
+            </span>
+          </div>
+        )}
       </div>
     </section>
   );
