@@ -39,8 +39,8 @@ function Jobs({ search }) {
             )
             .map((job) => <Job key={job._id} job={job} />)
         ) : (
-          <div className="min-h-[200px] flex w-full items-center text-start">
-            <span className="text-2xl text-slate-400">
+          <div className="min-h-[100px] flex w-full items-center text-start">
+            <span className="text-xl text-slate-400">
               No jobs found for your search query!
             </span>
           </div>
